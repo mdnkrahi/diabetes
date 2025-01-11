@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction Result</title>
+</head>
+<body>
+    <h1>Diabetes Prediction Result</h1>
+    <p>Hello {{ fn }} {{ ln }},</p>
+    <p>Age: {{ age }}</p>
+    <p>Gender: {{ gender }}</p>
+    <p>Your predicted diabetes status is: 
+        {% if r == 1 %}
+            Positive
+        {% else %}
+            Negative
+        {% endif %}
+    </p>
+</body>
+</html>
